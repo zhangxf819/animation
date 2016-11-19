@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>热气球</title>
+	<style>
+	.box{
+		width: 100%;
+		height: 800px;
+		border: 1px solid red;
+		position: relative;
+		animation-name: changeColor;
+		animation-duration: 30s;
+		-webkit-animation-direction: alternate;
+		-webkit-animation-timing-function: linear;
+		-o-animation-timing-function: linear;
+		animation-timing-function: linear;
+	}
+	.d1{
+		width: 88px;
+		height: 201px;
+		position: absolute;
+		top: 300px;
+		left: 50%;
+		background: url(images/3.png) no-repeat ;
+	}
+	.d2{
+		width: 100%;
+		height: 147px;
+		position: absolute;
+		top: 400px;
+		background: url(images/11.png) repeat;
+	}
+	.d3{
+		width: 100%;
+		height: 281px;
+		position: absolute;
+		top: 420px;
+		background: url(images/6.png) ;
+	}
+	.d5{
+		width: 872px;
+		height: 299px;
+		position: absolute;
+		top: 400px;
+		left: 15px;
+		background: url(images/8.png) no-repeat;
+	}
+	.d4{
+		width: 520px;
+		height: 229px;
+		position: absolute;
+		top: 360px;
+		left: 100px;
+		background: url(images/1.png) no-repeat;
+	}
+	.d6{
+		width: 231px;
+		height: 370px;
+		position: absolute;
+		top: 230px;
+		left: 400px;
+		background: url(images/9.png) no-repeat;
+	}
+	.d7{
+		width: 137px;
+		height: 263px;
+		position: absolute;
+		top: 250px;
+		left: 43%;
+		background: url(images/2.png) no-repeat;
+	}
+	.d8{
+		width: 347px;
+		height: 285px;
+		position: absolute;
+		top: 280px;
+		right: 10%;
+		background: url(images/4.png) no-repeat;
+	}
+	.d9{
+		width: 872px;
+		height: 299px;
+		position: absolute;
+		top: 400px;
+		right: 15px;
+		background: url(images/8.png) no-repeat;
+	}
+	.d10{
+		width: 800px;
+		height: 301px;
+		position: absolute;
+		top: 400px;
+		left: -220px;
+		background: url(images/7.png) repeat;
+	}
+	 .d11{
+		width: 800px;
+		height: 301px;
+		position: absolute;
+		top: 400px;
+		right: 500px;
+		background: url(images/7.png) no-repeat;
+	}
+	.d12{
+		width: 800px;
+		height: 301px;
+		position: absolute;
+		top: 400px;
+		right: -350px;
+		background: url(images/7.png) no-repeat;
+	} 
+
+	.d13{
+		width: 157px;
+		height: 227px;
+		position: absolute;
+		top:30px;
+		background: url(images/10.png) no-repeat;
+		transform-style: preserve-3d;
+		transform: rotate(45deg);
+
+		animation-name: fly;
+		animation-duration: 30s;
+		animation-timing-function: ease-in;
+		animation-iteration-count: infinite;
+		animation-direction: normal;
+	}
+
+
+	@keyframes changeColor{
+			0%{
+				background-color: blue;
+			}
+			25%{
+				background-color: red;
+			}
+			50%{
+				background-color: yellow;
+			}
+			75%{
+				background-color: blue;
+			}
+			100%{
+				background-color: green;
+
+			}
+		}
+
+	@keyframes fly{
+			0%{
+				/*background-color: blue;*/
+				left: 0;
+			}
+			25%{
+				/*background-color: red;*/
+				left: 25%;
+			}
+			50%{
+				/*background-color: yellow;*/
+				left: 50%;
+			}
+			75%{
+				/*background-color: blue;*/
+				left: 75%;
+			}
+			100%{
+				/*background-color: green;*/
+				left: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="d1"></div>
+		<div class="d2"></div>
+		<div class="d3"></div>
+		<div class="d4"></div>
+		<div class="d5"></div>
+		<div class="d6"></div>
+		<div class="d7"></div>
+		<div class="d8"></div>
+		<div class="d9"></div>
+		<div class="d10"></div>
+		<div class="d11"></div>
+		<div class="d12"></div>
+		<div class="d13"></div>
+	</div>
+</body>
+</html>
